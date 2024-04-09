@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string>
+
+
+
+class Shape {
+public:
+    // Public property
+    string name = "Shape";
+
+    // Public method
+    void display() {
+        cout << "This is a " << name << endl;
+    }
+
+protected:
+    // Protected method
+    void shapeInfo() {
+        cout << "This is a geometric shape" << endl;
+    }
+
+private:
+    // Private property
+    string description = "A geometric shape";
+
+    // Private method
+    void describe() {
+        cout << description << endl;
+    }
+};
+
+class Circle : public Shape {
+public:
+    void draw() {
+        cout << "Drawing a circle" << endl;
+        // Accessing protected method from base class
+        shapeInfo();
+        // Cannot access private members of the base class
+        // describe();
+    }
+};
+
+int main() {
+    Shape shape;
+    // Public properties and methods are accessible
+    cout << shape.name << endl;
+    shape.display();
+    // Protected members are not accessible from outside the class
+    // shape.shapeInfo();
+
+    Circle circle;
+    // Public properties and methods inherited from base class are accessible
+    cout << circle.name << endl;
+    circle.display();
+    // Protected members inherited from base class are accessible within subclass
+    circle.draw();
+    // Private members of the base class are not accessible from outside
+    // circle.describe();
+
+    return 0;
+}

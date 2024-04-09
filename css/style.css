@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.w-100 {
+    width: 100vw;
+}
+
+.headder {
+    width: 100vw;
+
+
+}
+
+nav {
+    width: 100vw;
+    padding: 0px 2vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    position: relative;
+    z-index: 15;
+    position: fixed;
+}
+
+nav h2 {
+    font-size: 2.5vw;
+    font-family: "Inter", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0px 1.5vw;
+    /* border-bottom: 2px solid #ce1212; */
+    margin: 0px 2px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7f7f90;
+    font-size: 1.3vw;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    display: inline;
+}
+
+nav button {
+    padding: 1vw 2vw;
+    background-color: #ce1212;
+    color: white;
+    border: none;
+    font-size: 1.1vw;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+nav ul li::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ce1212;
+    bottom: 0px;
+    transition: 0.7s;
+    top: 25px;
+}
+
+nav ul li::before:first-child {
+    width: 100%;
+}
+
+nav ul li:hover::before {
+    width: 70%;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.drop {
+    width: 18vw;
+    height: 18vw;
+    background-color: white;
+    position: absolute;
+    border-radius: 7px;
+    display: none;
+    /* text-align: center; */
+    padding: 1vw 1.2vw;
+}
+
+.drop ul {
+    flex-direction: column;
+}
+
+.drop ul li {
+    line-height: 3vw;
+}
+
+.drop ul li:hover::before {
+    width: 0%;
+}
+
+.drop ul li a:hover {
+    border-bottom: none;
+    color: #ce1212;
+    transition: 0.5s;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.drop1 {
+    width: 18vw;
+    height: 18vw;
+    background-color: white;
+    position: absolute;
+    border-radius: 7px;
+    position: absolute;
+    left: -105%;
+    top: 20px;
+    display: none;
+    transform: scale(1);
+    padding: 1vw 1.2vw;
+}
+
+nav ul li:hover .drop {
+    display: block;
+}
+
+.drop ul li:hover .drop1 {
+    display: block;
+}
+
+.headder-top {
+    width: 100vw;
+    height: 80vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+    padding: 2vw 5vw;
+}
+
+.left h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 4vw;
+    line-height: 6vw;
+    margin-bottom: 2vw;
+}
+
+.left p {
+    color: #4f4f5aa6;
+    font-weight: 400;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    background-color: #ce1212;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    padding: 1.2vw 2.5vw;
+    border-radius: 50px;
+}
+
+.button a {
+    margin-right: 2vw;
+}
+
+.button img {
+    position: relative;
+    top: 1.2vw;
+}
+
+.button span {
+    font-size: 1.4vw;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    top: 0.2vw;
+    position: relative;
+}
+
+.right {
+    width: 50%;
+    /* padding: 2vw 5vw; */
+}
+
+.right p {
+    width: 50%;
+}
+
+.right img {
+    width: 30vw;
+    text-align: center;
+    margin-left: 6vw;
+    margin-top: 38px;
+}
+
+.center {
+    width: 100vw;
+
+}
+
+.img-text {
+    width: 100vw;
+    margin-top: 5vw;
+}
+
+.img-text p {
+    font-size: 1.2vw;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.img-text h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.img-text span {
+    color: #ce1212;
+    margin-right: 1vw;
+}
+
+.firstall {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    padding: 0 5vw;
+}
+
+.images {
+    width: 50%;
+    background-image: url("https://bootstrapmade.com/demo/templates/Yummy/assets/img/about.jpg");
+    height: 70vw;
+    background-repeat: no-repeat;
+
+}
+
+.images .width {
+    width: 40vw;
+    margin: auto;
+    height: 15vh;
+    background-color: white;
+    margin-top: 40vw;
+}
+
+.lorem {
+    width: 50%;
+    padding: 0px 5vw;
+}
+
+.lorem p {
+    text-align: start;
+    font-style: italic;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #212529;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.lorem ul {
+    list-style: none;
+    padding: 0 2vw;
+    margin-top: 2vw;
+    position: relative;
+    right: 2vw;
+    margin-bottom: 5vw;
+}
+
+.lorem ul li {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: relative;
+}
+
+.lorem ul li {
+    margin-right: 5vw;
+    font-size: 1.4vw;
+    margin-bottom: 2vw;
+}
+
+.lorem ul li span {
+    color: #212529;
+    left: 2vw;
+    text-align: left;
+}
+
+.lorem ul li p {
+    position: relative;
+    top: 4vw;
+}
+.marges i{
+    display: none;
+}
+
+.lorem img {
+    bottom: 4vw;
+    position: relative;
+    width: 70%;
+    background-image: url(../about-2.jpg);
+}
+
+.width {
+    padding-top: 1vw;
+}
+
+.width h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vw;
+
+}
+@media (min-width:1240px) {
+    nav{
+        height: 10vh;
+    }
+    .headder-top {
+        height: 70vh;
+    }
+}
+@media (max-width:600px) {
+
+    nav ul {
+        display: none;
+    }
+
+    nav h2{
+        font-size: 5vw;
+    }
+    nav button{
+        font-size: 2.1vw;
+    }
+    .headder-top{
+        flex-direction: column  ;
+    }
+    .left{
+        margin-top: 100px;
+        padding: 0px;
+    }
+    .left h2{
+        font-size: 7vw;
+    }
+    .left p{
+        font-size: 2.5vw;
+    }
+    .button span{
+        font-size: 2vw;
+        bottom: 5px;
+        position: relative;
+    }
+    .button a{
+        padding: 2vw 3vw;
+    }
+    .button img {
+        position: relative;
+        top: 2.4vw;
+    }
+    .headder-top{
+        height: 100vh;
+    }
+    .img-text p{
+        font-size: 2.4vw;
+    }
+    .img-text h1{
+        font-size: 6vw;
+    }
+    .firstall{
+        flex-direction: column;
+    }
+    .img-text h1{
+        font-size: 4vw;
+    }
+    .img-text p {
+        font-size: 2.7vw;
+    }
+    .lorem ul li {
+           /* margin-right: 5vw; */
+        font-size: 1.9vw;
+    }
+    .lorem img {
+        width: 120%;
+    }
+    .marges i{
+        display: block;
+        font-size: 4vw;
+        margin: 0 10px;
+    }
+    .marges{
+        display: flex;
+    }
+}
+
+@media (min-width:300px) and (max-width:500px) {
+    nav ul {
+        display: none;
+    }
+
+    nav h2{
+        font-size: 8vw;
+    }
+    nav button{
+        /* font-size: 4vw; */
+        display: none;
+
+    }
+    .headder-top{
+        flex-direction: column;
+    }
+    .left{
+        margin-top: 100px;
+        padding: 0px;
+    }
+    .left h2{
+        font-size: 10vw;
+        line-height: 30px;
+    }
+    .left p{
+        font-size: 4vw;
+        margin-bottom: 30px;
+    }
+    .right img{
+        width: 60vw;
+        margin-left: 0px;
+    }
+    .button span{
+        font-size: 4vw;
+        bottom: 5px;
+        position: relative;
+    }
+    .button a{
+        padding: 3vw 4vw;
+    }
+    .button img {
+        position: relative;
+        top: 6.4vw;
+    }
+    .headder-top{
+        height: 125vh;
+    }
+    .img-text p{
+        font-size: 2.4vw;
+    }
+    .img-text h1{
+        font-size: 6vw;
+    }
+    .firstall{
+        flex-direction: column;
+    }
+    .img-text h1{
+        font-size: auto;
+    }
+    .img-text p {
+        font-size: 5vw;
+    }
+    .lorem ul li {
+           /* margin-right: 5vw; */
+        font-size: 3vw;
+    }
+    .lorem{
+        padding: 0px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .lorem img {
+        width: 140%;
+    }
+    .marges i{
+        display: block;
+        font-size: 8vw;
+        margin: 0 10px;
+    }
+    .marges{
+        display: flex;
+    }
+    .images{
+        width: 90%;
+        height: 110vh;
+    }
+    .images .width {
+        width: 71vw;
+        height: 13vh;
+        margin-top: 126vw;
+    }
+}
